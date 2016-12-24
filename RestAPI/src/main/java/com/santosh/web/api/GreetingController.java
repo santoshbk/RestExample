@@ -1,5 +1,6 @@
 package com.santosh.web.api;
 
+import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.OK;
 
@@ -7,7 +8,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -39,7 +39,7 @@ public class GreetingController {
 
     @RequestMapping(value = "/api/greetings", method = RequestMethod.POST)
     public ResponseEntity<Greeting> createGreeting(@RequestBody final Greeting greeting) {
-	return new ResponseEntity<>(save(greeting), HttpStatus.CREATED);
+	return new ResponseEntity<>(save(greeting), CREATED);
     }
 
     static {
