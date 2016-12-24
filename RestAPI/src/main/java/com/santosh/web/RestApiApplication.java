@@ -1,12 +1,12 @@
-package com.santosh;
+package com.santosh.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestFullWebserviceApplication {
+public class RestApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestFullWebserviceApplication.class, args);
+		SpringApplication.run(RestApiApplication.class, args);
 	}
 }
