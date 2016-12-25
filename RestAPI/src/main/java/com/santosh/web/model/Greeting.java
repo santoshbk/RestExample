@@ -2,18 +2,18 @@ package com.santosh.web.model;
 
 public class Greeting {
 
-    private int id;
+    private Integer id;
     private String message;
 
     public Greeting() {
 
     }
 
-    public int getId() {
+    public Integer getId() {
 	return this.id;
     }
 
-    public void setId(final int id) {
+    public void setId(final Integer id) {
 	this.id = id;
     }
 
